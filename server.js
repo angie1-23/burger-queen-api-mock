@@ -5,7 +5,7 @@ const auth = require('json-server-auth');
 const middlewares = jsonServer.defaults()
 
 const app = jsonServer.create();
-const router = jsonServer.router(path.join(__dirname, '/tmp/db.json'));
+const router = jsonServer.router(path.join(__dirname, "/tmp", "db.json"));
 
 const port = process.env.PORT || 8080;
 
